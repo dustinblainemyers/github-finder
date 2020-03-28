@@ -3,21 +3,20 @@ import React from "react";
 import "./App.css";
 
 class App extends React.Component {
-
-  foo = () => 'bars'
+  foo = () => "bars";
   render() {
-    const name = 'John Doe';
+    const name = "John Doe";
     const loading = false;
+    const showName = true;
 
-    if(loading) {
-      return <h4> Loading...</h4>
-    }
-    
     return (
       <div className='App'>
-        <h1>Hello {name} {this.foo}</h1>
-      </div>
-    );
+        {loading ? <h4> Loading </h4>: <h1>
+          Hello {showName && name} {this.foo}
+        </h1>}
+        
+      </div>);
+    
   }
 }
 
