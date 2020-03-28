@@ -11,7 +11,8 @@ class App extends React.Component {
     return (
       
       <nav className="navbar bg-primary">
-        <Navbar/>
+        <Navbar />
+        {/* double quotes don't seem to always work on props! */}
       </nav>
        
         
