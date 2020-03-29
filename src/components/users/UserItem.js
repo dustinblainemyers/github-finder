@@ -1,10 +1,24 @@
 import React, { Component } from 'react'
 
  class UserItem extends Component {
+     constructor() {
+         super();
+         console.log(123)
+         this.state= {
+             //state is just anobject
+
+             id: 'id',
+             login: 'mojombo',
+             avatar_url: 'https://avatars0.githubusercontent.com/u/1?v=4',
+             html_url:'https://github.com/mojombo'
+         }
+     }
     render() {
         return (
-            <div>
-                UserItem
+            <div className="card text-center">
+              
+              <img src={this.state.avatar_url} alt='a user' className="round-img"/>
+
             </div>
         )
     }
