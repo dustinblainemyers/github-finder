@@ -25,6 +25,7 @@ export class Navbar extends Component {
                 </h1>
                     
             </nav>
+            
         )
     }
 }

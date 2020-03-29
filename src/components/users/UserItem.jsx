@@ -17,8 +17,11 @@ import React, { Component } from 'react'
         return (
             <div className="card text-center">
               
-              <img src={this.state.avatar_url} alt='a user' className="round-img"/>
-
+              <img src={this.state.avatar_url} alt='a user' className="round-img" style={{width:'60px'}}/>
+              <h3>{this.state.login}</h3>
+              <div>
+                   <a href={this.state.html_url} className="btn btn-dark btn-sm my-1">More</a> 
+              </div>
             </div>
         )
     }
